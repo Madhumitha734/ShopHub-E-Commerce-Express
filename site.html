@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Core | Shopping Site</title>
+    <link rel="shortcut icon" href="Photos/clogo.jpg" />
+    <link rel="stylesheet" href="Style.css" />
+    <script>
+      function fun() {
+        window.open("http://127.0.0.1:5500/explore.html");
+      }
+      function fun2() {
+        window.open("http://127.0.0.1:5500/jeans.html");
+      }
+      function fun5() {
+        window.open("http://127.0.0.1:5500/tshirt.html");
+      }
+      function fun6() {
+        window.open("http://127.0.0.1:5500/Shoes2.html");
+      }
+      function fun7() {
+        window.open("http://127.0.0.1:5500/watch1.html");
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="Photos/Logo.jpg" alt="logo" width="100px" height="50px" />
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <form id="form" role="search">
+                  <input
+                    type="search"
+                    id="query"
+                    name="q"
+                    placeholder="Search..."
+                    aria-label="Search through site content"
+                  />
+                  <button style="width: 10px">&#8981;</button>
+                </form>
+                <script>
+                  const f = document.getElementById("form");
+                  const q = document.getElementById("query");
+                  const google = "https://www.myntra.com/";
+                  const site = "";
+
+                  function submitted(event) {
+                    event.preventDefault();
+                    const url = google + site + "+" + q.value;
+                    const win = window.open(url, "_blank");
+                    win.focus();
+                  }
+
+                  f.addEventListener("submit", submitted);
+                </script>
+              </li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Account</a></li>
+              <li>
+                <a href=""
+                  ><img src="Photos/Cart.jpg" alt="" width="40px" height="40px"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="row">
+          <div class="col1">
+            <h1>Let's Shop</h1>
+            <h6>
+          Whoever said money can't buy happiness simply didn't know where to
+              go shopping.
+            </h6>
+            <form>
+              <input
+                class="btn"
+                type="button"
+                value="Explore"
+                onclick="fun()"
+              />
+            </form>
+          </div>
+
+          <div class="col2">
+            <img src="Photos/img.jpg" alt="" width="600px" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="categories">
+      <div class="row">
+        <div class="col-4">
+          <img src="Photos/Dress1.jpg" alt="" width="300px" height="300px" />
+        </div>
+        <div class="col-3">
+          <img src="Photos/A1Shoes.jpg" alt="" width="300px" height="300px" />
+        </div>
+        <div class="col-3">
+          <img src="Photos/Tshirt1.jpg" alt="" width="300px" height="300px" />
+        </div>
+      </div>
+    </div>
+    <h2>Featured Products</h2>
+    <div class="c3">
+      <div class="row">
+        <div class="col-4">
+          <img src="Photos/Jeans1.jpg" alt="" width="250px" height="300px" />
+          <form>
+            <input
+              class="but"
+              type="button"
+              value="Flying Machine Jeans"
+              onclick="fun2()"
+            />
+          </form>
+        </div>
+        <div class="col-4">
+          <img src="Photos/N3Shoes.jpg" alt="" width="250px" height="300px" />
+          <form>
+            <input
+              class="but"
+              type="button"
+              value="Nike Shoes"
+              onclick="fun6()"
+            />
+          </form>
+        </div>
+        <div class="col-4">
+          <img src="Photos/Watch1.jpg" alt="" width="250px" height="300px" />
+          <form>
+            <input
+              class="but"
+              type="button"
+              value="Michael Kors Watch"
+              onclick="fun7()"
+            />
+          </form>
+        </div>
+        <div class="col-4">
+          <img src="Photos/Tshirt2.jpg" alt="" width="250px" height="300px" />
+          <form>
+            <input
+              class="but"
+              type="button"
+              value="Disney Tshirt"
+              onclick="fun5()"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

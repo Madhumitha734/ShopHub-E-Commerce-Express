@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Core | Explore</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script>
+      function fun() {
+        window.open("http://127.0.0.1:5500/tshirt.html");
+      }
+
+      function fun1() {
+        window.open("http://127.0.0.1:5500/dress.html");
+      }
+
+      function fun2() {
+        window.open("http://127.0.0.1:5500/jeans.html");
+      }
+      function fun3() {
+        window.open("http://127.0.0.1:5500/shoes1.html");
+      }
+      function fun4() {
+        window.open("http://127.0.0.1:5500/nike2.html");
+      }
+      function fun5() {
+        window.open("http://127.0.0.1:5500/puma1.html");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="Photos/Logo.jpg" alt="logo" width="100px" height="50px" />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <form id="form" role="search">
+              <input
+                type="search"
+                id="query"
+                name="q"
+                placeholder="Search..."
+                aria-label="Search through site content"
+              />
+              <button style="width: 10px">&#8981;</button>
+            </form>
+            <script>
+              const f = document.getElementById("form");
+              const q = document.getElementById("query");
+              const google = "https://www.myntra.com/";
+              const site = "";
+
+              function submitted(event) {
+                event.preventDefault();
+                const url = google + site + "+" + q.value;
+                const win = window.open(url, "_blank");
+                win.focus();
+              }
+
+              f.addEventListener("submit", submitted);
+            </script>
+          </li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Account</a></li>
+          <li>
+            <a href=""
+              ><img src="Photos/Cart.jpg" alt="" width="40px" height="40px"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <img src="Photos/exp.jpg" alt="" width="1500px" />
+    <div class="c1">
+      <div class="row">
+        <div class="explore">
+          <img src="Photos/Dress1.jpg" alt="" width="300px" />
+          <form>
+            <input
+              class="but"
+              type="button"
+              value="Antheaa Dress"
+              onclick="fun1()"
+            />
+          </form>
+        </div>
+        <div class="explore">
+          <img src="Photos/Jeans1.jpg" alt="" width="300px" />
+          <form>
+            <input
+              class="but"
+              type="button"
+              value="Levis Jeans"
+              onclick="fun2()"
+            />
+          </form>
+        </div>
+        <div class="explore">
+          <img src="Photos/Tshirt1.jpg" alt="" width="300px" />
+          <form>
+            <input
+              class="but"
+              type="button"
+              value="Disney Tshirt"
+              onclick="fun()"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="c1">
+      <div class="row">
+        <div class="explore">
+          <img src="Photos/A1Shoes.jpg" alt="" width="300px" />
+          <form>
+            <input
+              class="but"
+              type="button"
+              value="Adidas Shoes"
+              onclick="fun3()"
+            />
+          </form>
+        </div>
+
+        <div class="explore">
+          <img src="Photos/N2Shoes.jpg" alt="" width="300px" />
+          <form>
+            <input
+              class="but"
+              type="button"
+              value="Nike Shoes"
+              onclick="fun4()"
+            />
+          </form>
+        </div>
+        <div class="explore">
+          <img src="Photos/P1Shoes.jpg" alt="" width="300px" />
+          <form>
+            <input
+              class="but"
+              type="button"
+              value="Puma Shoes"
+              onclick="fun5()"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="c1">
+      <div class="row">
+        <div class="explore">
+          <img src="Photos/A2Shoes.jpg" alt="" width="300px" />
+        </div>
+        <div class="explore">
+          <img src="Photos/N3Shoes.jpg" alt="" width="300px" />
+        </div>
+
+        <div class="explore">
+          <img src="Photos/P2Shoes.jpg" alt="" width="300px" />
+        </div>
+      </div>
+    </div>
+
+    <div class="c1">
+      <div class="row">
+        <div class="explore">
+          <img src="Photos/P3Shoes.jpg" alt="" width="300px" />
+        </div>
+        <div class="explore">
+          <img src="Photos/Watch1.jpg" alt="" width="300px" />
+        </div>
+        <div class="explore">
+          <img src="Photos/Watch2.jpg" alt="" width="300px" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
